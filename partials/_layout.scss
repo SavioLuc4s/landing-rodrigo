@@ -24,6 +24,8 @@
     opacity: 0.3;
 }
 
+// HERO 
+
 .hero {
     color: $white-normal;
     min-height: 80vh;
@@ -96,4 +98,123 @@ transform: scale(1.2);
     .hero h1 {
         font-size: 24px;
     }
+}
+
+// SOBRE
+
+.about {
+    background-color: $primary-normal;
+    overflow: hidden;
+    color: $white-normal;
+
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 34px 14px 64px 14px;
+
+    img {
+        max-width: 570px;
+    }
+}
+
+.about-content {
+    div {
+        flex: 1;
+    }
+}
+
+.about-description {
+    h2 {
+        font-size: 38px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin-bottom: 14px;
+        line-height: 150%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+}
+    
+// SERVICES
+
+.services {
+    background-color: $azul-light;
+    color: $black-normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 54px 14px;
+}
+
+.services-content {
+    h2 {
+        text-align: center;
+        font-size: 38px;
+        margin-bottom: 14px;
+    }
+
+    p {
+        line-height: 150%;
+        margin-bottom: 14px;
+        text-align: center;
+        max-width: 780px;
+    }
+}
+
+.terapias {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 0 44px 34px 44px;
+}
+
+.psicoterapia {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: $azul-light;
+    border-radius: 8px;
+    box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        max-width: 354px;
+        transition: transform 0.2s;
+    }
+}
+
+.psicoterapia img:hover {
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+.psicoterapia-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+    background-color: $azul-light;
+    z-index: 99;
+}
+
+.psicoterapia-info button{
+    color: $white-normal;
+    background-color: $azul-normal;
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 0;
 }
