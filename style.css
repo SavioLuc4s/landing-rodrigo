@@ -258,7 +258,7 @@ i {
   display: flex;
   justify-content: space-between;
   padding: 14px;
-  background-color: #28B7E4;
+  background-color: #ffffff;
   z-index: 99;
 }
 
@@ -270,6 +270,14 @@ i {
   border: 0;
 }
 
+@media screen and (max-width: 768px) {
+  .terapias {
+    flex-direction: column;
+  }
+  .terapias img {
+    max-width: 740px;
+  }
+}
 body {
   font-family: "Sora", sans-serif;
   width: 100%;
